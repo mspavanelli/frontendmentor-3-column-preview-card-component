@@ -1,0 +1,151 @@
+/* NORMALIZE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* BASE */
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+body,
+button {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+  color: var(--transparent-white);
+}
+
+/* LAYOUTS */
+body {
+  display: grid;
+  grid-template-rows: 1fr 4rem;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+
+  height: 30rem;
+  width: 56rem;
+  max-width: 90vw;
+  min-width: 20rem;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* COMPONENTS */
+.card {
+  padding: 3rem;
+}
+
+.card:nth-child(1) {
+  background-color: var(--orange);
+  border-radius: 10px 0 0 10px;
+}
+.card:nth-child(2) {
+  background-color: var(--cyan);
+}
+.card:nth-child(3) {
+  background-color: var(--dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.card img {
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--light-gray);
+}
+
+.card p {
+  opacity: 0.7;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.card button {
+  background: var(--light-gray);
+  border: 0;
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-size: 0.9rem;
+  height: 3rem;
+  width: 9rem;
+
+  margin-top: 4rem;
+  border: 2px solid transparent;
+
+  transition: all 200ms;
+}
+
+.card button:hover,
+.card button:focus {
+  background: none;
+  border-color: white;
+  color: white !important;
+  outline: none;
+}
+
+.card:nth-child(1) button {
+  color: var(--orange);
+}
+.card:nth-child(2) button {
+  color: var(--cyan);
+}
+.card:nth-child(3) button {
+  color: var(--dark-cyan);
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .card:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+  .card:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .card button {
+    margin-top: 2rem;
+  }
+}
