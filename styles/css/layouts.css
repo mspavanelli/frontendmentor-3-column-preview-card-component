@@ -1,11 +1,7 @@
-body {
-  display: grid;
-  grid-template-rows: 1fr 4rem;
-}
-
 main {
   display: grid;
   place-items: center;
+  height: 100%;
 }
 
 main section {
@@ -13,16 +9,10 @@ main section {
   grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
 
   height: 30rem;
-  width: 56rem;
+  width: 57.5rem;
   max-width: 90vw;
   min-width: 20rem;
 
   margin: 0 auto;
   padding: 0 20px;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
