@@ -1,0 +1,67 @@
+.card {
+  padding: 3rem;
+}
+
+.card:nth-child(1) {
+  background-color: var(--orange);
+  border-radius: 10px 0 0 10px;
+}
+.card:nth-child(2) {
+  background-color: var(--cyan);
+}
+.card:nth-child(3) {
+  background-color: var(--dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.card img {
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--light-gray);
+}
+
+.card p {
+  opacity: 0.7;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.card button {
+  background: var(--light-gray);
+  border: 0;
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  font-size: 0.9rem;
+  height: 3rem;
+  width: 9rem;
+
+  margin-top: 4rem;
+  border: 2px solid transparent;
+
+  transition: all 200ms;
+}
+
+.card button:hover,
+.card button:focus {
+  background: none;
+  border-color: white;
+  color: white !important;
+  outline: none;
+}
+
+.card:nth-child(1) button {
+  color: var(--orange);
+}
+.card:nth-child(2) button {
+  color: var(--cyan);
+}
+.card:nth-child(3) button {
+  color: var(--dark-cyan);
+}

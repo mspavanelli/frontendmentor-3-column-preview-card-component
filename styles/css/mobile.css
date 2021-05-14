@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+  .card:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+  .card:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .card button {
+    margin-top: 2rem;
+  }
+}

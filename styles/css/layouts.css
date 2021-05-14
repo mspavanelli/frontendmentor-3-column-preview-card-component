@@ -1,0 +1,28 @@
+body {
+  display: grid;
+  grid-template-rows: 1fr 4rem;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+
+  height: 30rem;
+  width: 56rem;
+  max-width: 90vw;
+  min-width: 20rem;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
